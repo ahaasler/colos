@@ -1,0 +1,2 @@
+# colos
+A Jekyll theme
