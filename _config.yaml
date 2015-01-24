@@ -1,0 +1,8 @@
+title: Colos
+description: A Jekyll theme
+email: dev@adrianhaasler.com
+permalink: /:categories/:title/
+markdown: redcarpet
+redcarpet:
+  extensions: ['smart', 'with_toc_data']
+exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
