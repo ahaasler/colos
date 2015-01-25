@@ -2,7 +2,7 @@
 title: Home
 label: page-home
 lang: en
-permalink: /en/
+permalink: /
 nav: true
 position: 1
 layout: home
