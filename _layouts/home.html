@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="home">
+	<h1 class="page-heading">Posts</h1>
+	<ul class="post-list">
+		{% assign lang_posts = (site.posts | where: 'lang', page.lang) %}
+		{% for post in lang_posts %}
+			<li>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<h2>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+				</h2>
+			</li>
+		{% endfor %}
+	</ul>
+	{% assign rss_pages = (site.pages | where: 'layout', 'feed' | where: 'lang', page.lang) %}
+	{% for page in rss_pages limit:1 %}
+		<p class="rss-subscribe">subscribe <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">via RSS</a></p>
+	{% endfor %}
+</div>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="refresh" content="1;url={{ page.redirect | prepend: site.baseurl }}" />
+		<link rel="canonical" href="{{ page.redirect | prepend: site.baseurl }}" />
+		<script type="text/javascript">
+			window.location.href = "{{ page.redirect | prepend: site.baseurl }}"
+		</script>
+		<title>Page Redirection</title>
+	</head>
+	<body>
+		If you are not redirected automatically, follow <a href='{{ page.redirect | prepend: site.baseurl }}'>this link</a>.
+	</body>
+</html>
