@@ -6,4 +6,16 @@
 	<meta name="description" content="{{ site.description }}">
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	{% assign lang_pages = (site.pages | where: 'label', page.label | sort: 'lang') %}
+	{% for p in lang_pages %}
+		{% if p.label and p.lang != page.lang %}
+			<link rel="alternate" href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}" />
+		{% endif %}
+	{% endfor %}
+	{% assign lang_posts = (site.posts | where: 'label', page.label | sort: 'lang') %}
+	{% for p in lang_posts %}
+		{% if p.label and p.lang != page.lang %}
+			<link rel="alternate" href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}" />
+		{% endif %}
+	{% endfor %}
 </head>
