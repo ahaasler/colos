@@ -2,7 +2,7 @@
 title: Don Quijote
 label: post-quixote
 lang: es
-categories: es libro
+categories: [es, libro]
 layout: default
 ---
 
