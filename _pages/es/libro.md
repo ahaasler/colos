@@ -4,7 +4,7 @@ label: page-books
 lang: es
 permalink: /es/libro/
 nav: true
-position: 3
+position: 2
 categories: [es, libro]
 layout: collection
 ---

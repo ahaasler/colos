@@ -4,7 +4,7 @@ label: page-about
 lang: en
 permalink: /about/
 nav: true
-position: 2
+position: 3
 layout: default
 ---
 
