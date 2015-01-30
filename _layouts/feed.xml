@@ -13,6 +13,7 @@
 		<generator>Jekyll v{{ jekyll.version }}</generator>
 		{% assign posts = (site.posts | where: 'lang', page.lang) %}
 		{% for post in posts limit:10 %}
+		{% unless page.categories and post.categories != page.categories %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<description>{{ post.content | xml_escape }}</description>
@@ -26,6 +27,7 @@
 				<category>{{ cat | xml_escape }}</category>
 				{% endfor %}
 			</item>
+		{% endunless %}
 		{% endfor %}
 	</channel>
 </rss>

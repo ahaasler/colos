@@ -1,0 +1,7 @@
+---
+title: Books RSS
+lang: en
+permalink: /book/feed.xml
+categories: [book]
+layout: feed
+---
