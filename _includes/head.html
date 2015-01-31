@@ -18,4 +18,8 @@
 			<link rel="alternate" href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}" />
 		{% endif %}
 	{% endfor %}
+	{% assign rss_pages = (site.pages | where: 'layout', 'feed' | where: 'lang', page.lang | sort: 'categories') %}
+	{% for p in rss_pages %}
+		<link rel="alternate" type="application/rss+xml" title="{{ p.title }}" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" />
+	{% endfor %}
 </head>
