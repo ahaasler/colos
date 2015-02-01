@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>{{ site.title | xml_escape }}</title>
-		<description>{{ site.description | xml_escape }}</description>
+		{% capture title %}{% if site.locales[page.lang].title %}{{ site.locales[page.lang].title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+		<title>{{ title | xml_escape }}</title>
+		{% capture description %}{% if site.locales[page.lang].description %}{{ site.locales[page.lang].description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+		<description>{{ description | xml_escape }}</description>
 		{% if page.lang %}
 		<language>{{ page.lang }}</language>
 		{% endif %}
