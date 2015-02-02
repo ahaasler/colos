@@ -4,7 +4,7 @@ label: page-about
 lang: es
 permalink: /es/acerca-de/
 nav: true
-position: 3
+position: 4
 layout: default
 ---
 
