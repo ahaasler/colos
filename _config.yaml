@@ -8,6 +8,17 @@ redcarpet:
   extensions: ['smart', 'with_toc_data']
 exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
 include: ['_feeds', '_pages']
+defaults:
+  -
+    scope:
+      path: _posts/en
+    values:
+      lang: en
+  -
+    scope:
+      path: _posts/es
+    values:
+      lang: es
 locales:
   es:
     description: Un tema para Jekyll
