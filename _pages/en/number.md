@@ -1,7 +1,6 @@
 ---
 title: Numbers
 label: page-numbers
-lang: en
 permalink: /number/
 nav: true
 position: 3

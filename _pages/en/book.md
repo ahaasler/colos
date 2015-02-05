@@ -1,7 +1,6 @@
 ---
 title: Books
 label: page-books
-lang: en
 permalink: /book/
 nav: true
 position: 2

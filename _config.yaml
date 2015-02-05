@@ -11,9 +11,19 @@ include: ['_feeds', '_pages']
 defaults:
   -
     scope:
+      path: _pages/en
+    values:
+      lang: en
+  -
+    scope:
       path: _posts/en
     values:
       lang: en
+  -
+    scope:
+      path: _pages/es
+    values:
+      lang: es
   -
     scope:
       path: _posts/es

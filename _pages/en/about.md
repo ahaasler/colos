@@ -1,7 +1,6 @@
 ---
 title: About
 label: page-about
-lang: en
 permalink: /about/
 nav: true
 position: 4
