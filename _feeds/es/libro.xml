@@ -1,6 +1,5 @@
 ---
 title: RSS de libros
-lang: es
 permalink: /es/libro/feed.xml
 categories: [es, libro]
 layout: feed
