@@ -11,6 +11,11 @@ include: ['_feeds', '_pages']
 defaults:
   -
     scope:
+      path: ''
+    values:
+      layout: default
+  -
+    scope:
       path: _feeds
     values:
       layout: feed

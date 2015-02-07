@@ -2,7 +2,6 @@
 title: Don Quixote
 label: post-quixote
 categories: [book]
-layout: default
 ---
 
 Chapter I: Which treats of the character and pursuits of the famous gentleman Don Quixote de la Mancha
