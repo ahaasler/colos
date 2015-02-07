@@ -10,10 +10,15 @@ exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
 include: ['_feeds', '_pages']
 defaults:
   -
-      scope:
-        path: _feeds/en
-      values:
-        lang: en
+    scope:
+      path: _feeds
+    values:
+      layout: feed
+  -
+    scope:
+      path: _feeds/en
+    values:
+      lang: en
   -
     scope:
       path: _pages/en
