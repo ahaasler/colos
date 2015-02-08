@@ -14,7 +14,7 @@ layout: default
 			</li>
 		{% endfor %}
 	</ul>
-	{% assign rss_pages = (site.pages | where: 'layout', 'feed' | where: 'lang', page.lang) %}
+	{% assign rss_pages = (site.pages | where: 'layout', 'feed' | where: 'lang', page.lang | sort: 'categories') %}
 	{% for page in rss_pages limit:1 %}
 		<p class="rss-subscribe">subscribe <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">via RSS</a></p>
 	{% endfor %}
