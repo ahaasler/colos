@@ -50,6 +50,9 @@ defaults:
     values:
       lang: es
 locales:
+  en:
+    full_lang_name: English
   es:
+    full_lang_name: Español
     description: Un tema para Jekyll
     homeurl: /es
