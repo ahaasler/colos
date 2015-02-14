@@ -9,7 +9,7 @@ layout: default
 		{% for post in lang_posts %}
 			{% unless page.categories and post.categories != page.categories %}
 				<li>
-					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<span class="post-meta">{% include date.html date=post.date format="%b %-d, %Y" %}</span>
 					<h2>
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
 					</h2>
