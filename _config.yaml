@@ -60,3 +60,4 @@ locales:
     homeurl: /es
     date:
       complete_format: "%-d de %B del %Y"
+      month_names: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]

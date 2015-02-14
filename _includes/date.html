@@ -14,7 +14,8 @@
 %I - Hour of the day, 12-hour clock (1 - 12).
 %j - Day of the year (001 - 366).
 %k - Hour of the day, 24-hour clock (0 - 23).
-%m - Month of the year (01 - 12).
+%m - Month of the year, zero-padded (01 - 12).
+%-m - Month of the year, not zero-padded (1 - 12).
 %M - Minute of the hour (00 - 59).
 %p - Meridian indicator (AM/PM).
 %r - 12-hour time (%I:%M:%S %p)
@@ -30,4 +31,14 @@
 %Z - Time zone name.
 
 {% endcomment %}
-{{ include.date | date: include.format }}
+
+{% capture format %}{{ include.format }}{% endcapture %}
+
+{% capture month %}{{ include.date | date: "%-m" }}{% endcapture %}
+{% assign month_index = month | minus: 1 %}
+{% capture month_name %}{{ site.locales[page.lang].date.month_names[month_index] }}{% endcapture %}
+{% if month_name != "" %}
+	{% capture format %}{{ format | replace: "%B", month_name }}{% endcapture %}
+{% endif %}
+
+{{ include.date | date: format }}
