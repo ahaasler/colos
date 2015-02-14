@@ -1,1 +1,33 @@
+{% comment %}
+
+%a - Abbreviated weekday.
+%A - Full weekday name.
+%b - Abbreviated month name.
+%B - Full month name.
+%c - Preferred local date and time representation (%a %b %-d %T %Y).
+%d - Day of the month, zero-padded (01, 02, 03, etc.).
+%-d - Day of the month, not zero-padded (1,2,3, etc.).
+%D - Formats the date (dd/mm/yy).
+%e - Day of the month, blank-padded ( 1, 2, 3, etc.).
+%F - Returns the date in ISO 8601 format (yyyy-mm-dd).
+%H - Hour of the day, 24-hour clock (00 - 23).
+%I - Hour of the day, 12-hour clock (1 - 12).
+%j - Day of the year (001 - 366).
+%k - Hour of the day, 24-hour clock (0 - 23).
+%m - Month of the year (01 - 12).
+%M - Minute of the hour (00 - 59).
+%p - Meridian indicator (AM/PM).
+%r - 12-hour time (%I:%M:%S %p)
+%R - 24-hour time (%H:%M)
+%T - 24-hour time (%H:%M:%S)
+%U - The number of the week in the current year, starting with the first Sunday as the first day of the first week.
+%W - The number of the week in the current year, starting with the first Monday as the first day of the first week.
+%w - Day of the week (0 - 6, with Sunday being 0).
+%x - Preferred representation for the date alone, no time. (mm/dd/yy).
+%X - Preferred representation for the time. (hh:mm:ss).
+%y - Year without a century (00.99).
+%Y - Year with a century.
+%Z - Time zone name.
+
+{% endcomment %}
 {{ include.date | date: include.format }}
