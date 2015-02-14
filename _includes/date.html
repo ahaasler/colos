@@ -32,7 +32,7 @@
 
 {% endcomment %}
 
-{% capture format %}{{ include.format }}{% endcapture %}
+{% capture format %}{{ include.format | replace: "%c", "%a %b %-d %T %Y" }}{% endcapture %}
 
 {% capture weekday %}{{ include.date | date: "%w" }}{% endcapture %}
 {% assign weekday_index = weekday | times: 1 %}
