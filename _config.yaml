@@ -60,5 +60,6 @@ locales:
     homeurl: /es
     date:
       complete_format: "%-d de %B del %Y"
+      weekday_names: [domingo, lunes, martes, miércoles, jueves, viernes, sábado]
       month_names: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
       abbr_month_names: [ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic]

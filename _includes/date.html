@@ -34,6 +34,13 @@
 
 {% capture format %}{{ include.format }}{% endcapture %}
 
+{% capture weekday %}{{ include.date | date: "%w" }}{% endcapture %}
+{% assign weekday_index = weekday | times: 1 %}
+{% capture weekday_name %}{{ site.locales[page.lang].date.weekday_names[weekday_index] }}{% endcapture %}
+{% if weekday_name != "" %}
+	{% capture format %}{{ format | replace: "%A", weekday_name }}{% endcapture %}
+{% endif %}
+
 {% capture month %}{{ include.date | date: "%-m" }}{% endcapture %}
 {% assign month_index = month | minus: 1 %}
 {% capture month_name %}{{ site.locales[page.lang].date.month_names[month_index] }}{% endcapture %}
