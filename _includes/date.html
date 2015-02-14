@@ -40,5 +40,9 @@
 {% if month_name != "" %}
 	{% capture format %}{{ format | replace: "%B", month_name }}{% endcapture %}
 {% endif %}
+{% capture abbr_month_name %}{{ site.locales[page.lang].date.abbr_month_names[month_index] }}{% endcapture %}
+{% if abbr_month_name != "" %}
+	{% capture format %}{{ format | replace: "%b", abbr_month_name }}{% endcapture %}
+{% endif %}
 
 {{ include.date | date: format }}
