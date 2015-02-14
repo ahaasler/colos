@@ -56,4 +56,8 @@
 	{% capture format %}{{ format | replace: "%b", abbr_month_name }}{% endcapture %}
 {% endif %}
 
+{% if include.capitalize %}
+{{ include.date | date: format | capitalize }}
+{% else %}
 {{ include.date | date: format }}
+{% endif %}

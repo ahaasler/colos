@@ -10,7 +10,7 @@ layout: default
 			{% unless page.categories and post.categories != page.categories %}
 				<li>
 					{% capture complete_date_format %}{{ site.locales[page.lang].date.complete_format }}{% endcapture %}
-					<span class="post-meta">{% include date.html date=post.date format=complete_date_format %}</span>
+					<span class="post-meta">{% include date.html date=post.date format=complete_date_format capitalize=true %}</span>
 					<h2>
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
 					</h2>
