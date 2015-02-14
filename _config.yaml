@@ -52,12 +52,14 @@ defaults:
 locales:
   en:
     full_lang_name: English
+    rss_subscribe: Subscribe via RSS
     date:
       complete_format: "%B %-d, %Y"
   es:
     full_lang_name: Español
     description: Un tema para Jekyll
     homeurl: /es
+    rss_subscribe: Suscríbete por RSS
     date:
       complete_format: "%-d de %B del %Y"
       weekday_names: [domingo, lunes, martes, miércoles, jueves, viernes, sábado]
