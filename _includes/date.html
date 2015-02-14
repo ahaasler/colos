@@ -40,6 +40,10 @@
 {% if weekday_name != "" %}
 	{% capture format %}{{ format | replace: "%A", weekday_name }}{% endcapture %}
 {% endif %}
+{% capture abbr_weekday_name %}{{ site.locales[page.lang].date.abbr_weekday_names[weekday_index] }}{% endcapture %}
+{% if abbr_weekday_name != "" %}
+	{% capture format %}{{ format | replace: "%a", abbr_weekday_name }}{% endcapture %}
+{% endif %}
 
 {% capture month %}{{ include.date | date: "%-m" }}{% endcapture %}
 {% assign month_index = month | minus: 1 %}
