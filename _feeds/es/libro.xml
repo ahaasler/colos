@@ -1,5 +1,8 @@
 ---
 title: RSS de libros
+channel:
+  title: Libros - Colos
+  description: Aquí puedes encontrar artículos sobre libros
 permalink: /es/libro/feed.xml
 categories: [es, libro]
 ---

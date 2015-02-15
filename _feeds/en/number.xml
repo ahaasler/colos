@@ -1,5 +1,8 @@
 ---
 title: Numbers RSS
+channel:
+  title: Numbers - Colos
+  description: Here you can find posts about numbers
 permalink: /number/feed.xml
 categories: [number]
 ---

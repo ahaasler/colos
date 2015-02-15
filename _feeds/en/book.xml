@@ -1,5 +1,8 @@
 ---
 title: Books RSS
+channel:
+  title: Books - Colos
+  description: Here you can find posts about books
 permalink: /book/feed.xml
 categories: [book]
 ---

@@ -1,5 +1,8 @@
 ---
 title: RSS de código
+channel:
+  title: Código - Colos
+  description: Aquí puedes encontrar artículos sobre código
 permalink: /es/codigo/feed.xml
 categories: [es, codigo]
 ---

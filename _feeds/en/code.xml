@@ -1,5 +1,8 @@
 ---
 title: Code RSS
+channel:
+  title: Code - Colos
+  description: Here you can find posts about code
 permalink: /code/feed.xml
 categories: [code]
 ---

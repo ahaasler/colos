@@ -1,5 +1,8 @@
 ---
 title: RSS de números
+channel:
+  title: Números - Colos
+  description: Aquí puedes encontrar artículos sobre números
 permalink: /es/numero/feed.xml
 categories: [es, numero]
 ---
