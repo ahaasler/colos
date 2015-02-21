@@ -1,6 +1,12 @@
 <header class="site-header">
 	<div class="wrapper">
-		<a class="site-title" href="{{ site.locales[page.lang].homeurl | prepend: site.baseurl }}/" title="{% if site.locales[page.lang].title %}{{ site.locales[page.lang].title }}{% else %}{{ site.title }}{% endif %}">{% if site.locales[page.lang].title %}{{ site.locales[page.lang].title }}{% else %}{{ site.title }}{% endif %}</a>
+		<a class="site-title" href="{{ site.locales[page.lang].homeurl | prepend: site.baseurl }}/" title="{% if site.locales[page.lang].title %}{{ site.locales[page.lang].title }}{% else %}{{ site.title }}{% endif %}">
+			{% if site.locales[page.lang].title %}
+				{{ site.locales[page.lang].title }}
+			{% else %}
+				{{ site.title }}
+			{% endif %}
+		</a>
 		<nav class="site-nav">
 			{% assign sorted_pages = (site.pages | where: 'nav', true | where: 'lang', page.lang | sort: 'position') %}
 			{% for p in sorted_pages %}
@@ -13,13 +19,17 @@
 			{% assign lang_pages = (site.pages | where: 'label', page.label | sort: 'lang') %}
 			{% for p in lang_pages %}
 				{% if p.label %}
-					<a href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}"{% if page.lang == p.lang %} class="current"{% endif %} title="{{ p.title }} - {{ site.locales[p.lang].full_lang_name }}"><abbr lang="{{ p.lang }}" title="{{ site.locales[p.lang].full_lang_name }}">{{ p.lang }}</abbr></a>
+					<a href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}"{% if page.lang == p.lang %} class="current"{% endif %} title="{{ p.title }} - {{ site.locales[p.lang].full_lang_name }}">
+						<abbr lang="{{ p.lang }}" title="{{ site.locales[p.lang].full_lang_name }}">{{ p.lang }}</abbr>
+					</a>
 				{% endif %}
 			{% endfor %}
 			{% assign lang_posts = (site.posts | where: 'label', page.label | sort: 'lang') %}
 			{% for p in lang_posts %}
 				{% if p.label %}
-					<a href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}"{% if page.lang == p.lang %} class="current"{% endif %} title="{{ p.title }} - {{ site.locales[p.lang].full_lang_name }}"><abbr lang="{{ p.lang }}" title="{{ site.locales[p.lang].full_lang_name }}">{{ p.lang }}</abbr></a>
+					<a href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}"{% if page.lang == p.lang %} class="current"{% endif %} title="{{ p.title }} - {{ site.locales[p.lang].full_lang_name }}">
+						<abbr lang="{{ p.lang }}" title="{{ site.locales[p.lang].full_lang_name }}">{{ p.lang }}</abbr>
+					</a>
 				{% endif %}
 			{% endfor %}
 		</nav>

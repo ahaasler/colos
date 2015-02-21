@@ -2,7 +2,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{% if page.title %}{{ page.title }} - {% endif %}{% if site.locales[page.lang].title %}{{ site.locales[page.lang].title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>
+		{% if page.title %}
+			{{ page.title }} -
+		{% endif %}
+		{% if site.locales[page.lang].title %}
+			{{ site.locales[page.lang].title }}
+		{% else %}
+			{{ site.title }}
+		{% endif %}
+	</title>
 	<meta name="description" content="{% if site.locales[page.lang].description %}{{ site.locales[page.lang].description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
