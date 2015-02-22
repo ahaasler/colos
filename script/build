@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Halt script on error
+set -e
+
+# Build Jekyll site
+bundle exec jekyll build
