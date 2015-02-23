@@ -5,3 +5,6 @@ set -e
 
 # Build Jekyll site
 bundle exec jekyll build
+
+# Validate generated site
+bundle exec htmlproof ./_site
