@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Halt script on error
+set -e
+
+# Serve Jekyll site
+bundle exec jekyll serve
