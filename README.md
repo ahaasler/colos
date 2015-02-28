@@ -2,6 +2,7 @@ Colos: a Jekyll theme
 =====================
 
 [![Build Status](https://travis-ci.org/ahaasler/colos.svg?branch=gh-pages)](https://travis-ci.org/ahaasler/colos)
+[![Dependency Status](https://gemnasium.com/ahaasler/colos.svg)](https://gemnasium.com/ahaasler/colos)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 _Colos_ is a minimal, multilingual theme for [_Jekyll_](http://jekyllrb.com/ "Jekyll &bull; Simple, blog-aware, static sites").
@@ -18,6 +19,12 @@ Features
 
 - Material design.
 - Color everywhere!
+
+Dependencies
+------------
+
+- *github-pages*: Contains Jekyll and its dependencies to work properly on GitHub Pages. Uses the version defined in https://pages.github.com/versions.json, which is the currently deployed.
+- *html-proofer*: It's used to validate the generated site. No version is specified in order to use the last version available.
 
 License
 -------
