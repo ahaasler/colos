@@ -6,3 +6,6 @@ nav: true
 position: 1
 layout: home
 ---
+
+Artículos
+=========
