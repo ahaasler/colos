@@ -4,6 +4,7 @@ Colos: a Jekyll theme
 [![Build Status](https://travis-ci.org/ahaasler/colos.svg?branch=gh-pages)](https://travis-ci.org/ahaasler/colos)
 [![Dependency Status](https://gemnasium.com/ahaasler/colos.svg)](https://gemnasium.com/ahaasler/colos)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/release/ahaasler/colos.svg?style=flat)](https://github.com/ahaasler/colos/releases/tag/v0.1.0)
 
 *Colos* is a minimal, multilingual theme for *[Jekyll](http://jekyllrb.com/ "Jekyll &bull; Simple, blog-aware, static sites")*.
 
@@ -29,9 +30,9 @@ Getting Started
 
 2. You will also need *bundler* to handle your gems: `gem install bundler`.
 
-3. Clone or [fork](https://github.com/ahaasler/colos/fork "Fork your own copy of ahaasler/colos to your account") the repo: `git clone https://github.com/ahaasler/jekyll-base.git` (use the URL of your fork).
+3. [Fork](https://github.com/ahaasler/colos/fork "Fork your own copy of ahaasler/colos to your account") the repo and clone it: `git clone git@github.com:username/colos.git` (use the SSH clone URL of your fork).
 
-4. Install all necessary *gems*: `bundle install`.
+4. Install all necessary gems: `bundle install`.
 
 ### Build or serve your site
 
@@ -42,8 +43,8 @@ If you want to see how the site looks like use: `./script/serve`. Now go to `htt
 Dependencies
 ------------
 
-- *github-pages*: Contains Jekyll and its dependencies to work properly on GitHub Pages. Uses the version defined in https://pages.github.com/versions.json, which is the currently deployed.
-- *html-proofer*: It's used to validate the generated site. No version is specified in order to use the last version available.
+- *github-pages*: Contains *Jekyll* and its dependencies to work properly on *GitHub Pages*. Uses the version defined in https://pages.github.com/versions.json, which is the currently deployed.
+- *html-proofer*: Validates the generated site. No version is specified in order to use the last version available.
 
 License
 -------
