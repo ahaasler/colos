@@ -4,7 +4,7 @@ Colos: a Jekyll theme
 [![Build Status](https://travis-ci.org/ahaasler/colos.svg?branch=gh-pages)](https://travis-ci.org/ahaasler/colos)
 [![Dependency Status](https://gemnasium.com/ahaasler/colos.svg)](https://gemnasium.com/ahaasler/colos)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/release/ahaasler/colos.svg?style=flat)](https://github.com/ahaasler/colos/releases/tag/v0.1.0)
+[![Release](https://img.shields.io/github/release/ahaasler/colos.svg?style=flat)](https://github.com/ahaasler/colos/releases/latest)
 
 *Colos* is a minimal, multilingual theme for *[Jekyll](http://jekyllrb.com/ "Jekyll &bull; Simple, blog-aware, static sites")*.
 
