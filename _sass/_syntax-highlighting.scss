@@ -26,7 +26,6 @@ $monokai-green-vivid: #a6e22e;
 .highlight {
 	background: $monokai-grey-dark;
 	color: $monokai-white;
-	@extend %vertical-rhythm;
 
 	.c     { color: $monokai-brown-light; font-style: italic } // Comment
 	.err   { color: $monokai-pink-vivid; background-color: $monokai-purple-dark } // Error

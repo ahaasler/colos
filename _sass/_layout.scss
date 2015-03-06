@@ -4,3 +4,8 @@ nav {
 		margin: 0 $spacing-unit / 12;
 	}
 }
+
+// Code blocks
+.highlight {
+	@extend %vertical-rhythm;
+}
