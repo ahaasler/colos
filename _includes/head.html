@@ -32,4 +32,5 @@
 	{% for p in rss_pages %}
 		<link rel="alternate" type="application/rss+xml" title="{{ p.title }}" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" />
 	{% endfor %}
+	{% include polymer.html %}
 </head>
