@@ -5,14 +5,17 @@ layout: compress
 <html{% if page.lang %} lang="{{ page.lang }}"{% endif %}>
 {% include head.html %}
 <body>
-	<core-header-panel>
-		{% include header.html %}
-		<div class="content">
-			<div class="page-content wrapper">
-				{{ content }}
+	<core-drawer-panel>
+		{% include drawer.html %}
+		<core-header-panel main>
+			{% include header.html %}
+			<div class="content">
+				<div class="page-content wrapper">
+					{{ content }}
+				</div>
+				{% include footer.html %}
 			</div>
-			{% include footer.html %}
-		</div>
-	</core-header-panel>
+		</core-header-panel>
+	</core-drawer-panel>
 </body>
 </html>

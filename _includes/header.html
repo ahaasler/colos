@@ -1,19 +1,5 @@
 <core-toolbar>
-	<a class="site-title" href="{{ site.locales[page.lang].homeurl | prepend: site.baseurl }}/" title="{% if site.locales[page.lang].title %}{{ site.locales[page.lang].title }}{% else %}{{ site.title }}{% endif %}">
-		{% if site.locales[page.lang].title %}
-			{{ site.locales[page.lang].title }}
-		{% else %}
-			{{ site.title }}
-		{% endif %}
-	</a>
-	<nav class="site-nav">
-		{% assign sorted_pages = (site.pages | where: 'nav', true | where: 'lang', page.lang | sort: 'position') %}
-		{% for p in sorted_pages %}
-			{% if page.title %}
-				<a class="page-link{% if page.title == p.title %} current{% endif %}" href="{{ p.url | prepend: site.baseurl }}" title="{{ p.title }}">{{ p.title }}</a>
-			{% endif %}
-		{% endfor %}
-	</nav>
+	<core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
 	<nav id="language" class="lang">
 		{% assign lang_pages = (site.pages | where: 'label', page.label | sort: 'lang') %}
 		{% for p in lang_pages %}
