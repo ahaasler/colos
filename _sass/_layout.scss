@@ -1,3 +1,19 @@
+// Body
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+// Header
+core-header-panel {
+	height: 100%;
+	width: 100%;
+
+	.content {
+		height: 100%;
+	}
+}
+
 // Navigation
 nav {
 	a {
