@@ -27,6 +27,13 @@ $colors: (
 
 @mixin color($modifier, $color) {
 	body#{$modifier} {
+		[drawer], [drawer] core-toolbar {
+			color: nth($color, $light-primary);
+			background-color: nth($color, $dark-primary);
+		}
+		[drawer] a {
+			color: nth($color, $light-primary);
+		}
 	}
 }
 
@@ -34,8 +41,4 @@ $colors: (
 // Apply colors
 @each $c in $colors {
 	@include color(nth($c, 1), nth($c, 2));
-}
-
-[drawer] {
-	background-color: #fff;
 }
