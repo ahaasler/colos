@@ -2,7 +2,7 @@
 	<core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
 	<div flex>{{ page.title }}</div>
 	<paper-menu-button id"language" class="lang">
-		<paper-icon-button icon="language" center></paper-icon-button>
+		<paper-icon-button icon="language"></paper-icon-button>
 		<paper-dropdown class="dropdown" halign="right">
 			<core-menu class="menu">
 				{% assign lang_pages = (site.pages | where: 'label', page.label | sort: 'lang') %}
@@ -10,7 +10,7 @@
 					{% if p.label %}
 						<paper-item>
 							<a href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}"{% if page.lang == p.lang %} class="current"{% endif %} title="{{ p.title }} - {{ site.locales[p.lang].full_lang_name }}">
-								<abbr lang="{{ p.lang }}" title="{{ site.locales[p.lang].full_lang_name }}">{{ p.lang }}</abbr>
+								{{ site.locales[p.lang].full_lang_name }}
 							</a>
 						</paper-item>
 					{% endif %}
@@ -20,7 +20,7 @@
 					{% if p.label %}
 						<paper-item>
 							<a href="{{ p.url | prepend: site.baseurl }}" hreflang="{{ p.lang }}"{% if page.lang == p.lang %} class="current"{% endif %} title="{{ p.title }} - {{ site.locales[p.lang].full_lang_name }}">
-								<abbr lang="{{ p.lang }}" title="{{ site.locales[p.lang].full_lang_name }}">{{ p.lang }}</abbr>
+								{{ site.locales[p.lang].full_lang_name }}
 							</a>
 						</paper-item>
 					{% endif %}
