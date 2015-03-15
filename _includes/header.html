@@ -1,5 +1,6 @@
 <core-toolbar>
 	<core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+	<div flex>{{ page.title }}</div>
 	<nav id="language" class="lang">
 		{% assign lang_pages = (site.pages | where: 'label', page.label | sort: 'lang') %}
 		{% for p in lang_pages %}
