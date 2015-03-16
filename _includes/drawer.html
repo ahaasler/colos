@@ -12,9 +12,9 @@
 		{% assign sorted_pages = (site.pages | where: 'nav', true | where: 'lang', page.lang | sort: 'position') %}
 		{% for p in sorted_pages %}
 			{% if page.title %}
-				<core-item label="{{ p.title }}">
-					<a class="page-link{% if page.title == p.title %} current{% endif %}" href="{{ p.url | prepend: site.baseurl }}" title="{{ p.title }}"></a>
-				</core-item>
+				<paper-item label="{{ p.title }}">
+					<a class="page-link{% if page.title == p.title %} current{% endif %}" href="{{ p.url | prepend: site.baseurl }}" title="{{ p.title }}">{{ p.title }}</a>
+				</paper-item>
 			{% endif %}
 		{% endfor %}
 	</core-menu>
