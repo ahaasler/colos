@@ -16,6 +16,9 @@ defaults:
       layout: default
       drawer:
         mode: seamed
+      color:
+        drawer:
+          background: grey
   -
     scope:
       path: _feeds
