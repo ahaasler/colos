@@ -16,6 +16,8 @@ defaults:
       layout: default
       drawer:
         mode: seamed
+      header:
+        mode: seamed
       color:
         drawer:
           background: grey

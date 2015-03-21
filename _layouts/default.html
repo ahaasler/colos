@@ -7,7 +7,7 @@ layout: compress
 <body unresolved class="{% include color.html %}">
 	<core-drawer-panel>
 		{% include drawer.html %}
-		<core-header-panel main>
+		<core-header-panel main mode="{{ page.header.mode }}">
 			{% include header.html %}
 			<div class="content">
 				<div class="page-content wrapper">
