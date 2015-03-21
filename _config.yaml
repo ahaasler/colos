@@ -19,6 +19,8 @@ defaults:
       color:
         drawer:
           background: grey
+        main:
+          header: grey
   -
     scope:
       path: _feeds

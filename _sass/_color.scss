@@ -135,9 +135,23 @@ $colors: (
 	}
 }
 
+@mixin main-header($name, $color) {
+	$modifier: "";
+	@if $name != "" {
+		$modifier: ".#{$name}-main-header";
+	}
+	body#{$modifier} {
+		core-toolbar.header {
+			color: nth($color, $light-primary);
+			background-color: nth($color, $primary);
+		}
+	}
+}
+
 
 // Apply colors
 @each $c in $colors {
 	@include drawer-background(nth($c, 1), nth($c, 2));
 	@include drawer-header(nth($c, 1), nth($c, 2));
+	@include main-header(nth($c, 1), nth($c, 2));
 }
