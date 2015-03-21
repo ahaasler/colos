@@ -1,3 +1,12 @@
 {% if page.color.drawer.background %}
 	{{ page.color.drawer.background }}-drawer-background
 {% endif %}
+{% if page.color.drawer.header %}
+	{{ page.color.drawer.header }}-drawer-header
+{% else if page.color.drawer.background %}
+	{% comment %}
+		Use drawer background color if a specific color is not given for the
+		drawer header.
+	{% endcomment %}
+	{{ page.color.drawer.background }}-drawer-header
+{% endif %}

@@ -109,7 +109,23 @@ $colors: (
 		$modifier: ".#{$name}-drawer-background";
 	}
 	body#{$modifier} {
-		[drawer], [drawer] core-toolbar {
+		[drawer] {
+			color: nth($color, $light-primary);
+			background-color: nth($color, $dark-primary);
+		}
+		[drawer] a {
+			color: nth($color, $light-primary);
+		}
+	}
+}
+
+@mixin drawer-header($name, $color) {
+	$modifier: "";
+	@if $name != "" {
+		$modifier: ".#{$name}-drawer-header";
+	}
+	body#{$modifier} {
+		[drawer] core-toolbar {
 			color: nth($color, $light-primary);
 			background-color: nth($color, $dark-primary);
 		}
@@ -123,4 +139,5 @@ $colors: (
 // Apply colors
 @each $c in $colors {
 	@include drawer-background(nth($c, 1), nth($c, 2));
+	@include drawer-header(nth($c, 1), nth($c, 2));
 }
