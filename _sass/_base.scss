@@ -15,6 +15,11 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+// Code styling
+code {
+	font-family: $monospace-font-family;
+}
+
 // Set `margin-bottom` to maintain vertical rhythm
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
