@@ -14,7 +14,7 @@
 	</title>
 	<meta name="description" content="{% if site.locales[page.lang].description %}{{ site.locales[page.lang].description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	{% assign lang_pages = (site.pages | where: 'label', page.label | sort: 'lang') %}
