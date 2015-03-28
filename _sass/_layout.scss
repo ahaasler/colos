@@ -11,7 +11,7 @@ core-menu {
 // Page content
 .page-content {
 	margin: 0 auto;
-	max-width: 34em;
+	max-width: $spacing-unit * 17;
 }
 
 // Code blocks
