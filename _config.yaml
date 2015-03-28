@@ -22,7 +22,7 @@ defaults:
         drawer:
           background: grey
         main:
-          header: grey
+          content: grey
   -
     scope:
       path: _feeds

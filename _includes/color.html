@@ -10,6 +10,15 @@
 	{% endcomment %}
 	{{ page.color.drawer.background }}-drawer-header
 {% endif %}
+{% if page.color.main.content %}
+	{{ page.color.main.content }}-main-content
+{% endif %}
 {% if page.color.main.header %}
 	{{ page.color.main.header }}-main-header
+{% else if page.color.main.content %}
+	{% comment %}
+		Use main content color if a specific color is not given for the main
+		header.
+	{% endcomment %}
+	{{ page.color.main.content }}-main-header
 {% endif %}
