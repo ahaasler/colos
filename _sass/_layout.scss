@@ -13,6 +13,10 @@ core-menu {
 	margin: 0 auto;
 	padding: $spacing-unit * 0.1;
 	max-width: $spacing-unit * 17;
+
+	@include media-query($on-laptop) {
+		font-size: $base-font-size * 1.2;
+	}
 }
 
 // Code blocks
