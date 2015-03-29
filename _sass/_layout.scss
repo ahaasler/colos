@@ -19,6 +19,14 @@ core-menu {
 	}
 }
 
+// Heading
+h1 { font-size: $base-font-size * 1.6; }
+h2 { font-size: $base-font-size * 1.5; }
+h3 { font-size: $base-font-size * 1.4; }
+h4 { font-size: $base-font-size * 1.3; }
+h5 { font-size: $base-font-size * 1.2; }
+h6 { font-size: $base-font-size * 1.1; }
+
 // Code blocks
 .highlight {
 	padding: $spacing-unit * 0.4 $spacing-unit * 0.6 $spacing-unit / 12;
