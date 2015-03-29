@@ -20,7 +20,10 @@ core-menu {
 }
 
 // Heading
-h1 { font-size: $base-font-size * 1.6; }
+h1 {
+	font-size: $base-font-size * 1.6;
+	text-align: center;
+}
 h2 { font-size: $base-font-size * 1.5; }
 h3 { font-size: $base-font-size * 1.4; }
 h4 { font-size: $base-font-size * 1.3; }
