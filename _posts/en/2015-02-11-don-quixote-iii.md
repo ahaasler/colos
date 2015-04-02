@@ -2,6 +2,11 @@
 title: Don Quixote, chapter III
 label: post-quixote-iii
 categories: [book]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Chapter III: Wherein is related the droll way in which Don Quixote had himself dubbed a knight

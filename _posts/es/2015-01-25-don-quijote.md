@@ -2,6 +2,11 @@
 title: Don Quijote
 label: post-quixote
 categories: [es, libro]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Capítulo I: Que trata de la condición y ejercicio del famoso hidalgo don Quijote de la Mancha

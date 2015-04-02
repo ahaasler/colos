@@ -2,6 +2,11 @@
 title: Don Quixote, chapter II
 label: post-quixote-ii
 categories: [book]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Chapter II: Which treats of the first sally the ingenious Don Quixote made from home

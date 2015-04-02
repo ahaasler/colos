@@ -2,6 +2,11 @@
 title: Don Quijote, capítulo IV
 label: post-quixote-iv
 categories: [es, libro]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Capítulo IV: De lo que le sucedió a nuestro caballero cuando salió de la venta

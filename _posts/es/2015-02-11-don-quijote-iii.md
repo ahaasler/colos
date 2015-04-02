@@ -2,6 +2,11 @@
 title: Don Quijote, capítulo III
 label: post-quixote-iii
 categories: [es, libro]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Capítulo III: Donde se cuenta la graciosa manera que tuvo don Quijote en armarse caballero

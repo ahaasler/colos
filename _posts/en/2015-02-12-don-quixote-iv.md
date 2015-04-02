@@ -2,6 +2,11 @@
 title: Don Quixote, chapter IV
 label: post-quixote-iv
 categories: [book]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Chapter IV: Of what happened to our knight when he left the inn

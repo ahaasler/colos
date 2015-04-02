@@ -2,6 +2,11 @@
 title: Don Quijote, capítulo II
 label: post-quixote-ii
 categories: [es, libro]
+color:
+  main:
+    content: brown
+  drawer:
+    background: brown
 ---
 
 Capítulo II: Que trata de la primera salida que de su tierra hizo el ingenioso don Quijote
