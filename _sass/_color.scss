@@ -236,6 +236,18 @@ $blue-grey: (
 	#B6B6B6, // Divider
 );
 
+// White
+$white: (
+	#FFFFFF, // Dark primary
+	#FFFFFF, // Primary
+	#FFFFFF, // Light primary
+	#212121, // Text primary
+	#FFFFFF, // Accent
+	#212121, // Primary text
+	#727272, // Secondary text
+	#B6B6B6, // Divider
+);
+
 $colors: (
 	("red", $red),
 	("pink", $pink),
@@ -256,6 +268,7 @@ $colors: (
 	("brown", $brown),
 	("", $grey), // Default
 	("blue-grey", $blue-grey),
+	("white", $white),
 );
 
 
