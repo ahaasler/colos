@@ -266,11 +266,11 @@ $colors: (
 	}
 	body#{$modifier} {
 		[drawer] {
-			color: nth($color, $light-primary);
+			color: nth($color, $text-primary);
 			background-color: nth($color, $dark-primary);
 		}
 		[drawer] a {
-			color: nth($color, $light-primary);
+			color: nth($color, $text-primary);
 		}
 	}
 }
@@ -282,11 +282,11 @@ $colors: (
 	}
 	body#{$modifier} {
 		[drawer] core-toolbar {
-			color: nth($color, $light-primary);
+			color: nth($color, $text-primary);
 			background-color: nth($color, $dark-primary);
 		}
 		[drawer] a {
-			color: nth($color, $light-primary);
+			color: nth($color, $text-primary);
 		}
 	}
 }
@@ -298,7 +298,7 @@ $colors: (
 	}
 	body#{$modifier} {
 		core-toolbar.header {
-			color: nth($color, $light-primary);
+			color: nth($color, $text-primary);
 			background-color: nth($color, $primary);
 		}
 	}
