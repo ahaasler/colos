@@ -37,3 +37,8 @@ h6 { font-size: $base-font-size * 1.1; }
 	margin: $spacing-unit / 12;
 	overflow-x: auto;
 }
+
+// Links
+a, a:hover, a:active {
+	text-decoration: none;
+}

@@ -317,6 +317,12 @@ $colors: (
 		h2, h3, h4, h5, h6, {
 			color: nth($color, $secondary-text);
 		}
+		a {
+			color: nth($color, $dark-primary);
+		}
+		a:hover, a:active {
+			color: nth($color, $divider);
+		}
 	}
 }
 
