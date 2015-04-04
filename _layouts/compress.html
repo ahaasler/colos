@@ -5,6 +5,6 @@
 {% if temp3.size == 2 %}
 <pre>{{ temp3.first | newline_to_br }}</pre>
 {% endif %}
-{{ temp3.last | split: ' ' | join: ' ' | replace: ' <', '<' | replace: '> ', '>' }}
+{{ temp3.last | split: ' ' | join: ' ' }}
 {% endfor %}
 {% endcapture %}{{ compress | strip_newlines }}
