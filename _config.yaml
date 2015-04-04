@@ -5,7 +5,7 @@ email: dev@adrianhaasler.com
 permalink: /:categories/:title/
 markdown: redcarpet
 redcarpet:
-  extensions: ['smart', 'with_toc_data']
+  extensions: ['smart', 'tables', 'with_toc_data']
 exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'script']
 include: ['_feeds', '_pages']
 defaults:
