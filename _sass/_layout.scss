@@ -38,6 +38,13 @@ h6 { font-size: $base-font-size * 1.1; }
 	overflow-x: auto;
 }
 
+// Notes
+paper-shadow {
+	padding: $spacing-unit * 0.4 $spacing-unit * 0.6 $spacing-unit / 12;
+	border-radius: $spacing-unit / 12;
+	margin: $spacing-unit / 12;
+}
+
 // Links
 a, a:hover, a:active {
 	text-decoration: none;
