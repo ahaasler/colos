@@ -349,6 +349,9 @@ $colors: (
 		a:hover, a:active {
 			color: nth($color, $divider);
 		}
+		paper-shadow {
+			background-color: nth($color, $light-primary);
+		}
 	}
 }
 
