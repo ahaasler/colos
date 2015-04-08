@@ -24,7 +24,7 @@ $monokai-green-vivid: #a6e22e;
 
 // Syntax highlighting styles
 .highlight {
-	background: $monokai-grey-dark;
+	background-color: $monokai-grey-dark!important;
 	color: $monokai-white;
 
 	.c     { color: $monokai-brown-light; font-style: italic } // Comment

@@ -5,6 +5,6 @@
 {% if temp3.size == 2 %}
 <pre>{{ temp3.first | newline_to_br }}</pre>
 {% endif %}
-{{ temp3.last | split: ' ' | join: ' ' | replace: '<blockquote>', '<paper-shadow z="1"><blockquote>' | replace: '</blockquote>', '</blockquote></paper-shadow>' }}
+{{ temp3.last | split: ' ' | join: ' ' }}
 {% endfor %}
-{% endcapture %}{{ compress | strip_newlines }}
+{% endcapture %}{{ compress | strip_newlines | replace: '<blockquote>', '<paper-shadow z="1"><blockquote>' | replace: '</blockquote>', '</blockquote></paper-shadow>' | replace: '<div class="highlight">', '<paper-shadow z="1" class="highlight">' | replace: '</code></pre></div>', '</code></pre></paper-shadow>' }}
