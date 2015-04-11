@@ -20,6 +20,7 @@ Features
 
 - Material design.
 - Color everywhere!
+- Different layouts.
 
 Getting Started
 ---------------
