@@ -298,6 +298,10 @@ $colors: (
 		[drawer] a {
 			color: nth($color, $text-primary);
 		}
+		[drawer] paper-item:hover, [drawer] paper-item:active {
+			color: nth($color, $text-primary);
+			background-color: nth($color, $primary);
+		}
 	}
 }
 
