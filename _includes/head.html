@@ -33,5 +33,8 @@
 	{% for p in rss_pages %}
 		<link rel="alternate" type="application/rss+xml" title="{{ p.title }}" href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" />
 	{% endfor %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js"></script>
+	<script src="/js/navigation.js"></script>
 	{% include polymer.html %}
 </head>
