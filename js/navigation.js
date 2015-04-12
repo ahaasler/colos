@@ -17,6 +17,14 @@ jQuery(document).ready(function() {
 			document.title = data.match(/<title>(.*?)<\/title>/)[1];
 			// Update canonical link
 			$('link[rel=canonical]').attr({'href':data.match(/<link rel=\"canonical\" href=\"(.*?)\">/)[1]});
+			// Update alternate language links (remove and add because the number of links may be different)
+			$('link[rel="alternate"][hreflang]').remove();
+			var alternateLanguages = data.match(/(<link rel=\"alternate\" href=\"[^\"]*?\" hreflang=\"[^\"]*?\" \/>?)/g);
+			if (alternateLanguages) {
+				for (var i = 0; i < alternateLanguages.length; i++) {
+					$('link[rel="canonical"]').after(alternateLanguages[i]);
+				}
+			}
 			// Update body class (colors)
 			document.body.className = data.match(/<body class=\"(.*?)\"/)[1];
 			// Update content
