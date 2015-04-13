@@ -18,11 +18,11 @@ jQuery(document).ready(function() {
 			// Update canonical link
 			$('link[rel=canonical]').attr({'href':data.match(/<link rel=\"canonical\" href=\"(.*?)\">/)[1]});
 			// Update alternate language links (remove and add because the number of links may be different)
-			$('link[rel="alternate"][hreflang]').remove();
-			var alternateLanguages = data.match(/(<link rel=\"alternate\" href=\"[^\"]*?\" hreflang=\"[^\"]*?\" \/>?)/g);
-			if (alternateLanguages) {
-				for (var i = 0; i < alternateLanguages.length; i++) {
-					$('link[rel="canonical"]').after(alternateLanguages[i]);
+			$('link[rel="alternate"]').remove();
+			var alternates = data.match(/(<link rel=\"alternate\" [^>]*?\/>)/g);
+			if (alternates) {
+				for (var i = 0; i < alternates.length; i++) {
+					$('link[rel="canonical"]').after(alternates[i]);
 				}
 			}
 			// Update body class (colors)
