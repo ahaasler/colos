@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 			$('link[rel="alternate"]').remove();
 			var alternates = data.match(/(<link rel=\"alternate\" [^>]*?\/>)/g);
 			if (alternates) {
-				for (var i = 0; i < alternates.length; i++) {
+				for (var i = alternates.length - 1; i >= 0; i--) {
 					$('link[rel="canonical"]').after(alternates[i]);
 				}
 			}
