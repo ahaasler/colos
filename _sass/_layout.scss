@@ -30,6 +30,11 @@ h4 { font-size: $base-font-size * 1.3; }
 h5 { font-size: $base-font-size * 1.2; }
 h6 { font-size: $base-font-size * 1.1; }
 
+// Post list
+.post-list {
+	list-style-type: none;
+}
+
 // Code blocks
 .highlight {
 	word-wrap: break-word;
