@@ -10,6 +10,8 @@ Colos: a Jekyll theme
 
 You can find the live demo in http://colos.adrianhaasler.com, proudly hosted on *GitHub*.
 
+> Update 2015/04/18: I found [Hexo](http://hexo.io/ "A fast, simple & powerful blog framework") and I really like it, so I'll give it a try. The development of this theme (for now) will continue in [hexo-theme-colos](https://github.com/ahaasler/hexo-theme-colos "A material design theme for Hexo").
+
 Features
 --------
 
