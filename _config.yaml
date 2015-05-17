@@ -1,6 +1,6 @@
 title: Colos
 description: A Jekyll theme
-url: http://colos.adrianhaasler.com
+url: http://colos-jekyll.adrianhaasler.com
 email: dev@adrianhaasler.com
 permalink: /:categories/:title/
 markdown: redcarpet
